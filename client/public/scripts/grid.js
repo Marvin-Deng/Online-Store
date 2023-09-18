@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('a');
         card.classList.add('card')
         card.href = `../details.html?id=${item.id}`;
-        
+
         card.innerHTML = `
           <div class="top-container">
             <img src="${item.image}" alt="${item.name}" />
@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <div class="bottom-container">
             <h2>${item.name}</h2>
-            <p>Price: ${item.pricePoint}</p>  
+            <p>Price: ${item.pricePoint}</p> 
+            <p>Ratings: ${item.ratings}</p>   
           </div>
           `;
 
@@ -27,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     .catch((error) => {
-      console.log("Error")
       console.error('Error fetching data:', error);
       message.textContent = 'No Products Available 😞'
       dataContainer.appendChild(message)

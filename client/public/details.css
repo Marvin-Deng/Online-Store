@@ -1,0 +1,51 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-text {
+    flex: 1;
+    padding: 16px;
+}
+
+.card-text h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-text p {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.card-text button {
+    margin-top: 50px;
+    border: 2px solid rgb(47, 136, 143);
+    background-color: transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(47, 136, 143);
+    transition: background-color 0.3s ease;
+}
+
+.card-text button:hover {
+    background-color: transparent;
+    color: rgb(47, 136, 143);
+}
+

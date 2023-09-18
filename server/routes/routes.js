@@ -8,8 +8,14 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    const id = req.params.id;
-    res.status(200).json(data[id]);
+    const id = parseInt(req.params.id, 10);
+    const item = data.find(item => item.id === id); 
+
+    if (!item) {
+        return res.status(404).json({ message: 'Item not found' });
+    }
+
+    res.status(200).json(item);
 })
 
 export default router

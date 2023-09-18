@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const requestedID = urlParams.get('id');
-
+    console.log(requestedID)
     fetch(`/items/${requestedID}`)
         .then(response => {
             if (!response.ok) {
@@ -13,18 +13,27 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then((data) => {
             const card = document.createElement('div');
-            console.log(data)
+            card.classList.add('card')
+
             card.innerHTML = `
-                <img src="${data.image}" alt="${data.name}" />
-                <h2>${data.name}</h2>
-                <p>${data.description}</p>
-                <p>Price: ${data.pricePoint}</p>
-                <p>Submitted by: ${data.submittedBy}</p>
-                <p>Submitted on: ${data.submittedOn}</p>
+                <div class="card-image">
+                    <img src="${data.image}" alt="${data.name}" />
+                </div>
+                <div class="card-text">
+                    <h2>${data.name}</h2>
+                    <p>Price: ${data.pricePoint}</p>
+                    <p>Condition: ${data.condition}</p>
+                    <p>Ratings: ${data.ratings}</p>
+                    <button>
+                        Checkout
+                    </button>
+                </div>
             `;
             dataContainer.appendChild(card);
         })
         .catch((error) => {
             console.error('Error fetching item details:', error);
+            const errorPageUrl = '../error.html'; 
+            window.location.href = errorPageUrl;
         });
 });
