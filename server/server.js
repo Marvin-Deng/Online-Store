@@ -1,14 +1,13 @@
 import express from 'express'
 import productsRouter from './routes/routes.js'
-import path from 'path'
 
 const app = express()
 
-app.use('/', express.static(path.join('../client')));
-app.use('/public', express.static(path.join('../client/public')));
-app.use('/scripts', express.static(path.join('../client/public/scripts')));
-
 app.use('/items', productsRouter)
+
+app.use('/public', express.static('./public'))
+app.use('/scripts', express.static('./public/scripts'))
+
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

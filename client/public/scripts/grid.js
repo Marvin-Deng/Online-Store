@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
       data.forEach(item => {
         const card = document.createElement('a');
         card.classList.add('card')
-        card.href = `/items?id=${item.id}`
-        console.log(item.id)
+        card.href = `../details.html?id=${item.id}`;
+        
         card.innerHTML = `
           <div class="top-container">
             <img src="${item.image}" alt="${item.name}" />

@@ -1,6 +1,4 @@
 import express from 'express'
-import path from 'path'
-
 import data from '../data/data.js'
 
 const router = express.Router()
@@ -10,7 +8,8 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    res.status(200).sendFile(path.resolve('../client/public/details.html'))
+    const id = req.params.id;
+    res.status(200).json(data[id]);
 })
 
 export default router

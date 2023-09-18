@@ -4,7 +4,7 @@ const data = [
         "name": "Acer XF243Y P - 23.8 Monitor FullHD",
         "pricePoint": "$74.99",
         "image": "https://i.ebayimg.com/images/g/NBAAAOSwYzlkkwOF/s-l500.jpg",
-        "description":"A party in a candle",
+        "ratings":"Positive",
         "condition": "Certified - Refurbished"
     },
     {
@@ -12,72 +12,64 @@ const data = [
         "name": "Acer K243Y H - 23.8 Monitor FullHD",
         "pricePoint": "$69.99",
         "image":"https://i.ebayimg.com/images/g/7w0AAOSwD1BkkwQG/s-l500.jpg",
-        "description":"A gift and fun activity to do together",
-        "submittedBy":"Isabel",
-        "submittedOn":"2023-02-14T12:32:00"
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 3,
-        "name": "Nintendo Switch Lite",
-        "pricePoint": "$$",
-        "image":"https://tinyurl.com/2cdfe59x",
-        "description":"A gift for gamers on-the-go",
-        "submittedBy":"Mario",
-        "submittedOn":"2022-09-13T11:01:00"
+        "name": "HP V22v G5 21.5 FHD 1920x1080 VA Monitor ",
+        "pricePoint": "$59.00",
+        "image":"https://i.ebayimg.com/images/g/~zEAAOSwfOJkWs96/s-l1600.jpg",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 4,
-        "name": "Nike Panda Dunks",
-        "pricePoint": "$$",
-        "image":"https://tinyurl.com/y9bzv8xd",
-        "description":"A fan-favorite black and white color-blocking sneaker",
-        "submittedBy":"Jason",
-        "submittedOn":"2023-03-10T05:23:00"
+        "name": "Acer 34 Widescreen Gaming Monitor",
+        "pricePoint": "$249.99",
+        "image":"https://i.ebayimg.com/images/g/cAQAAOSwjvhk327a/s-l1600.jpg",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 5,
-        "name": "Razer Kitty Headset",
-        "pricePoint": "$$",
-        "image":"https://tinyurl.com/4pt84wry",
-        "description":"Create the purrfect gaming look with your own killer kitty style",
-        "submittedBy":"Pixie",
-        "submittedOn":"2011-10-10T14:48:00"
+        "name": "HP - 27 IPS LED FHD FreeSync Monitor",
+        "pricePoint": "$269.99",
+        "image":"https://i.ebayimg.com/images/g/TRkAAOSwZZFkRsZL/s-l1600.jpg",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 6,
-        "name": "Nellsi Sunset Lamp Projection",
-        "pricePoint": "$",
-        "image":"https://tinyurl.com/y76zsc37",
-        "description":"Sunshine any time, any place",
-        "submittedBy":"Melody",
-        "submittedOn":"2011-10-10T14:48:00"
+        "name": "Acer Nitro ED320QR BI 31.5” 1920x1080P",
+        "pricePoint": "$139.99",
+        "image":"https://i.ebayimg.com/images/g/mpgAAOSwq79kAIjP/s-l1600.png",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 7,
-        "name": "Frigidaire Retro Mini Fridge",
-        "pricePoint": "$",
-        "image":"https://tinyurl.com/dzyhec8a",
-        "description":"A retro way of keeping things cool",
-        "submittedBy":"Grover",
-        "submittedOn":"2023-01-01T14:48:00"
+        "name": "Acer KG241Y S - 23.8 Monitor FullHD 1920x1080",
+        "pricePoint": "$89.99",
+        "image":"https://i.ebayimg.com/images/g/TCgAAOSww11jofU-/s-l1600.jpg",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 8,
-        "name": "Crosley Discover Turntable",
-        "pricePoint": "$",
-        "image":"https://tinyurl.com/4vycxmkm",
-        "description":"A portable turntable that is ready to play right out of the box",
-        "submittedBy":"Marvin",
-        "submittedOn":"2023-04-01T07:02:00"
+        "name": "Acer KA272 E 27 1920 x 1080 Widescreen LCD Monitor",
+        "pricePoint": "$99.99",
+        "image":"https://i.ebayimg.com/images/g/B14AAOSw1Tdk34gd/s-l1600.jpg",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     },
     {
         "id": 9,
-        "name": "Brandon Blackwood Parker Bag",
-        "pricePoint": "$$",
-        "image":"https://tinyurl.com/2n6pszw7",
-        "description":"A perfect pop of color",
-        "submittedBy":"Brandon",
-        "submittedOn":"2023-01-10T14:48:00"
+        "name": "Acer Nitro XV0 - 31.5 Monitor 2560x1440 IPS",
+        "pricePoint": "$179.99",
+        "image":"https://i.ebayimg.com/images/g/W6kAAOSwM~5jKbsw/s-l1600.jpg",
+        "ratings":"Positive",
+        "condition": "Certified - Refurbished"
     }
 ]
 

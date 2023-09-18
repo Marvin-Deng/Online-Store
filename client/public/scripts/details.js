@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataContainer = document.getElementById('card-details');
 
     const urlParams = new URLSearchParams(window.location.search);
-    const itemId = urlParams.get('id');
-    console.log(itemId)
-    fetch(`/items/${itemId}`)
+    const requestedID = urlParams.get('id');
+
+    fetch(`/items/${requestedID}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response error');
@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then((data) => {
-            console.log(data);
             const card = document.createElement('div');
+            console.log(data)
             card.innerHTML = `
                 <img src="${data.image}" alt="${data.name}" />
                 <h2>${data.name}</h2>
