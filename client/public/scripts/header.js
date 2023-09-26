@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const headerLogo = document.createElement('img');
   headerLogo.className = 'logo'
-  headerLogo.src = '../assets/logo.png';
+  headerLogo.src = '/assets/logo.png';
 
   headerLogo.addEventListener('click', function handleClick(event) {
     window.location = '/';

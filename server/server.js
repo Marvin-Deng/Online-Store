@@ -4,10 +4,8 @@ import productsRouter from './routes/routes.js'
 const app = express()
 
 app.use('/items', productsRouter)
-
 app.use('/public', express.static('./public'))
 app.use('/scripts', express.static('./public/scripts'))
-
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

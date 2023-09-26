@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <div class="bottom-container">
             <h2>${item.name}</h2>
-            <p>Price: ${item.pricePoint}</p> 
+            <p>Price: ${item.pricepoint}</p> 
             <p>Ratings: ${item.ratings}</p>   
           </div>
           `;
