@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const requestedID = urlParams.get('id');
-    console.log(requestedID)
+
     fetch(`/items/${requestedID}`)
         .then(response => {
             if (!response.ok) {
@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dataContainer.appendChild(card);
         })
         .catch((error) => {
-            console.error('Error fetching item details:', error);
             const errorPageUrl = '../error.html'; 
             window.location.href = errorPageUrl;
         });

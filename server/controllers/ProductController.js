@@ -1,27 +1,25 @@
-import { pool } from '../config/db.js'
+import { pool } from '../config/db.js';
 
-const getProducts = async (req, res) => {
-    try {
-        const results = await pool.query('SELECT * FROM eshop ORDER BY id ASC')
-        res.status(200).json(results.rows)
-    } 
-    catch (error) {
-        res.status(400).json({ error: error.message } )
+class ProductController {
+    static async getProducts() {
+        try {
+            const results = await pool.query('SELECT * FROM eshop ORDER BY id ASC');
+            return results.rows;
+        } 
+        catch (error) {
+            throw error;
+        }
+    }
+
+    static async getProductById(id) {
+        try {
+            const results = await pool.query('SELECT * FROM eshop WHERE id = $1', [id]);
+            return results.rows[0];
+        } 
+        catch (error) {
+            throw error;
+        }
     }
 }
 
-const getProductById = async (req, res) => {
-    try {
-        const id = parseInt(req.params.id, 10);
-        const results = await pool.query('SELECT * FROM eshop WHERE id = $1', [id]);
-        res.status(200).json(results.rows[0]);
-    } 
-    catch (error) {
-        res.status(400).json({ error: error.message } )
-    }
-}
-    
-export default {
-    getProducts, 
-    getProductById
-}
+export default ProductController;
