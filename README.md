@@ -1,4 +1,4 @@
-# EShop - *WEB103 Project 2 *
+# EShop - *WEB103 Project 2*
 
 A simple online store page made using Vite.js, HTML, CSS, and PostgreSQL
 
