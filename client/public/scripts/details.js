@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="card-text">
                     <h2>${data.name}</h2>
-                    <p>Price: ${data.pricePoint}</p>
+                    <p>Price: ${data.pricepoint}</p>
                     <p>Condition: ${data.condition}</p>
                     <p>Ratings: ${data.ratings}</p>
                     <button>
